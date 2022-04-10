@@ -1,3 +1,5 @@
+data <- read_excel(C:\Users\harsh\OneDrive\Documents\traffic_data)
+
 #MIXED EFFECT MODEL
 #PART 1: DIVIDE INTO TEST AND TRAINING
 #Partition of data into train and test datasets (80% train and 20% test) through random selection
@@ -5,8 +7,11 @@ inTrain <- createDataPartition (
   y = imputedDF$length, 
   p = .80, 
   list = FALSE)
-trainDF <- imputedDF[inTrain,] 
-testDF <- imputedDF[-inTrain,]  
+trainDF <- imputedDF[data,] 
+testDF <- imputedDF[-data,]  
+
+print (data)
+print (inTrain)
 
 
 #PART 2: CREATE FUNCTIONS FOR MIXED EFFECT MODEL 
