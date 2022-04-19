@@ -25,8 +25,8 @@ with open("data.js", "w") as myfile:
         # myfile.write(x + ", " + y + "\n")
         myfile.write("[" + str(x1) + ", " + str(y1) + "], ")
         myfile.write("[" + str(x1) + ", " + str(y2) + "], ")
-        myfile.write("[" + str(x2) + ", " + str(y1) + "], ")
-        myfile.write("[" + str(x2) + ", " + str(y2) + "]")
+        myfile.write("[" + str(x2) + ", " + str(y2) + "], ")
+        myfile.write("[" + str(x2) + ", " + str(y1) + "]")
         myfile.write(" ] ] } },\n")
         count = count + 1
 
