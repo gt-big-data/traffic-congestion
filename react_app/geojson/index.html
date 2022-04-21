@@ -1,0 +1,54 @@
+<html>
+<head>
+    <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps.css'>
+    <!-- <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps.css'> -->
+    <link rel='script' type='text/js' href='data.js'>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps-web.min.js"></script>
+    <!-- <script>(function(){ window.SS = window.SS || {}; SS.Require = function (callback){ if (typeof callback === 'function') { if (window.SS && SS.EventTrack) { callback(); } else { var siteSpect = document.getElementById('siteSpectLibraries'); var head = document.getElementsByTagName('head')[0]; if (siteSpect === null && typeof head !== 'undefined') { siteSpect = document.createElement('script'); siteSpect.type = 'text/javascript'; siteSpect.src = '/__ssobj/core.js+ssdomvar.js+generic-adapter.js';siteSpect.async = true; siteSpect.id = 'siteSpectLibraries'; head.appendChild(siteSpect); } if (window.addEventListener){ siteSpect.addEventListener('load', callback, false); } else { siteSpect.attachEvent('onload', callback, false); } } } };})();</script> -->
+</head>
+<body style="width: 100%; height: 100%; margin: 0; padding: 0;">
+    <div id="map" style="width: 100%; height: 100%;"></div>
+    <script src="data.js?v=01"></script> 
+    <script>
+      tt.setProductInfo('GeoJson BDBI Test', '1.0');
+      var map = tt.map({
+          key: "b4U5uN2N4zIspQKlIwXqpHhhXCveWh42",
+          source: 'vector',
+          container: "map",
+          center: [-84.3880, 33.7490],
+          zoom: 12
+      });
+      console.log(geoJson)
+      map.on('load',function(){
+        for (let i = 0; i < 500; i++) {
+          map.addLayer({
+            
+            'id': geoJson["features"][i]["properties"]["NAME"],
+            // 'id': i.toString(),
+            // 'id': 'temp',
+            'type': 'fill',
+            'source':
+            {
+              'type': 'geojson',
+              'data': {
+                'type': 'Feature',
+                'geometry': geoJson["features"][i]["geometry"]
+                // 'geometry': { "type": "Polygon", "coordinates": [ [ [ -100.529, 30.27 ], [ -200.475, 50.269 ], [ -59.475, -10.39 ] ] ] } 
+                // 'geometry': { "type": "Polygon", "coordinates": [ [ [ 100.529, 30.27 ], [ 200.475, 50.269 ], [ 59.475, -10.39 ] ] ] } 
+            
+            }
+          },
+          
+          'layout': {},
+          'paint': {
+            'fill-color': '#800',
+            'fill-opacity': 0.8
+          
+          }
+          })
+        }
+      });
+
+   </script>
+</body>
+</html>
