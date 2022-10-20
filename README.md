@@ -4,9 +4,21 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This tool uses traffic data collected from Waze for Cities and weather data collected from OpenWeatherMap and NOAA to make predictions about traffic congestion in the Atlanta area. Built by a project team in the Big Data Big Impact club at Georgia Tech.
 
+Since this is a project that requires React, you must install Node.js. `yarn` is a command that helps install all of the required dependencies for a project. In the react_app directory, run `sudo npm install --global yarn`. You can now use the available scripts below to build the production node. Once built, test and start the project!
+
 ## Available Scripts
 
 In the react_app directory, you can run:
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `yarn start`
 
@@ -20,16 +32,6 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `yarn eject`
 
