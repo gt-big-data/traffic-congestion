@@ -1,10 +1,14 @@
+
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 
 // https://mui.com/components/slider/
 
-const HourSlider = () => {
+const HourSlider = (props) => {
+
+
+
     const marks = [
         { value: 0, label: '0',},
         { value: 2, label: '2',},
@@ -21,6 +25,12 @@ const HourSlider = () => {
         { value: 24, label: '24',},
       ];
 
+    const updateHour = (e) => {
+      console.log(e.target.value)
+      props.setTime(e.target.value);
+    }
+
+
     return (
         <Box id="slider" sx={{ width: 300 }}>
         <Slider
@@ -30,6 +40,7 @@ const HourSlider = () => {
           marks={marks}
           min={0}
           max={24}
+          onChange={updateHour}
         />
       </Box>
     )
