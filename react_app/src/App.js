@@ -5,8 +5,10 @@ import Map from './components/Map';
 function App() {
   return (
     <div>
-      <InfoScreen />
-      <Map />
+      <div className='sidePanel'>
+        <InfoScreen/>
+      </div>
+      <Map id="layer0"/>
     </div>
   );
 }
