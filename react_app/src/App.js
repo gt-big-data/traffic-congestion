@@ -4,11 +4,9 @@ import Map from './components/Map';
 
 function App() {
   return (
-    <div>
-      <div className='sidePanel'>
-        <InfoScreen/>
-      </div>
+    <div class="map-view">
       <Map id="layer0"/>
+      <InfoScreen />
     </div>
   );
 }

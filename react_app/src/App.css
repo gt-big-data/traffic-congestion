@@ -1,15 +1,23 @@
 .leaflet-container {
   height: 100vh;
   width: 100%;
+  margin-left: 350px;
+  position: absolute;
 }
 
 #layer0 {
   z-index: 0;
+  position: absolute;
 }
 
 
 .sidepanel {
   z-index: 1;
-  box-shadow: 1rem 0rem 0rem rgba(0,0,0,1);
+  box-shadow: 0rem 0rem 0rem rgba(0,0,0,1);
   border-right: black;
+  position: aboslute;
+}
+
+.container {
+  position: relative;
 }
