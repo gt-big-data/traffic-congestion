@@ -2,8 +2,8 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import markerIconPng from 'leaflet/dist/images/marker-icon.png';
 import { Icon } from 'leaflet';
 import '../../node_modules/leaflet/dist/leaflet.css';
-import HeatmapLayer from "react-leaflet-heatmap-layer";
-import results from "../utils/results.json"
+import HeatmapLayer from "react-leaflet-heatmap-layer-v3";
+import results from "../utils/results.json";
 
 const Map = () => {
   return (
@@ -17,13 +17,17 @@ const Map = () => {
           If not, create your own SQL database. 
       */}
       <HeatmapLayer
-          points={results.features}
+          fitBoundsOnLoad
+          fitBoundsOnUpdate
+          points={results}
           longitudeExtractor={(m) => m.xccord}
           latitudeExtractor={(m) => m.ycoord}
           intensityExtractor={(m) => parseFloat(m["Jam Level"])} //we need to change some of the data so it matches our csv layout. 
           //the intensity if 1 - 0.2 2 - 0.4 3- 0.6 4 - 0.8 5 - 1.0
-          max={100} //the max and min values are weird. We need to understand how it works. 
-          minOpacity={0.2}
+          max={5} //the max and min values are weird. We need to understand how it works. 
+          minOpacity={1}
+          
+        
         />
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
