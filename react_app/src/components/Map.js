@@ -3,6 +3,8 @@ import markerIconPng from 'leaflet/dist/images/marker-icon.png';
 import { Icon } from 'leaflet';
 import '../../node_modules/leaflet/dist/leaflet.css';
 import HeatmapLayer from "react-leaflet-heatmap-layer";
+import fs from 'fs';
+import parse from 'csv-parse';
 
 const Map = () => {
   return (
