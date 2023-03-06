@@ -24,7 +24,7 @@ const Map = () => {
           latitudeExtractor={(m) => m.ycoord}
           intensityExtractor={(m) => parseFloat(m["Jam Level"])} //we need to change some of the data so it matches our csv layout. 
           //the intensity if 1 - 0.2 2 - 0.4 3- 0.6 4 - 0.8 5 - 1.0
-          max={5} //the max and min values are weird. We need to understand how it works. 
+          max={6} //the max and min values are weird. We need to understand how it works. 
           minOpacity={1}
           
         
@@ -35,7 +35,7 @@ const Map = () => {
       />
       <Marker position={[33.7756, -84.3963]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25,41], iconAnchor: [12, 41]})}>
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+          Georgia Tech Main Campus <br /> Main Point.
         </Popup>
       </Marker>
     </MapContainer>
