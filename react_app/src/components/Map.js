@@ -15,19 +15,7 @@ const Map = () => {
 
           If not, create your own SQL database. 
       */}
-      {/* <HeatmapLayer
-          fitBoundsOnLoad
-          fitBoundsOnUpdate
-          points={results}
-          longitudeExtractor={(m) => m.xccord}
-          latitudeExtractor={(m) => m.ycoord}
-          intensityExtractor={(m) => parseFloat(m["Jam Level"])} //we need to change some of the data so it matches our csv layout. 
-          //the intensity if 1 - 0.2 2 - 0.4 3- 0.6 4 - 0.8 5 - 1.0
-          max={6} //the max and min values are weird. We need to understand how it works. 
-          minOpacity={1}
-          
-        
-        /> */}
+      
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
