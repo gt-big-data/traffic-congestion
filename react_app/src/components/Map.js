@@ -2,9 +2,14 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import markerIconPng from 'leaflet/dist/images/marker-icon.png';
 import { Icon } from 'leaflet';
 import '../../node_modules/leaflet/dist/leaflet.css';
+import React, { useState, useEffect} from 'react';
 import results from "../utils/results.json";
+import Calendar from './Calendar';
+import HourSlider from './HourSlider';
 
-const Map = () => {
+
+const Map = (props) => {
+
   return (
     <MapContainer center={[33.7756, -84.3963]} zoom={15} scrollWheelZoom={true}>
       {/* Used this site for reference: https://codesandbox.io/s/heatmap-bangalore-forked-t57mz?file=/src/map.js:540-850
@@ -15,7 +20,7 @@ const Map = () => {
 
           If not, create your own SQL database. 
       */}
-      
+
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -25,6 +30,8 @@ const Map = () => {
           Georgia Tech Main Campus <br /> Main Point.
         </Popup>
       </Marker>
+
+      {/* put loop here and then when the datae is correct including hour, then create marker right there. */}
     </MapContainer>
   );
 }
