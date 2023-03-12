@@ -2,7 +2,6 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import markerIconPng from 'leaflet/dist/images/marker-icon.png';
 import { Icon } from 'leaflet';
 import '../../node_modules/leaflet/dist/leaflet.css';
-import HeatmapLayer from "react-leaflet-heatmap-layer-v3";
 import results from "../utils/results.json";
 
 const Map = () => {
@@ -16,7 +15,7 @@ const Map = () => {
 
           If not, create your own SQL database. 
       */}
-      <HeatmapLayer
+      {/* <HeatmapLayer
           fitBoundsOnLoad
           fitBoundsOnUpdate
           points={results}
@@ -28,7 +27,7 @@ const Map = () => {
           minOpacity={1}
           
         
-        />
+        /> */}
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
