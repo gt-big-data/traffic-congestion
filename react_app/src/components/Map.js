@@ -19,6 +19,25 @@ const Map = (props) => {
           and use those points for the heatmap layer. 
 
           If not, create your own SQL database. 
+
+          // Istead of making array, we should just plot the points right there. Average out the points if it is within 1 mile radius. 
+          let i = 0;
+          let results2 = new Array();
+          while (i < results.length) {
+            if (results[i].hour == hour && results[i].day_of_week == day_of_week
+            && results[i].month == month) {
+                results2.push(results[i]);
+                <Marker position={[xcood, ycoord]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25,41], iconAnchor: [12, 41]})}>
+                  <Popup>
+                    Longitude: long <br /> Latitute: lat <br /> Average Delay (in seconds): delay.
+                  </Popup>
+                </Marker>
+            }
+            i++;
+          }
+
+          //Later on, convert this to React and then because the data is dense. Do the average delay of the delay within the coordinates within a radius. 
+
       */}
 
       <TileLayer
