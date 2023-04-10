@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "waze-data-query",
+  "private_key_id": "fa2ccd73f15df90c1c30e7b54e15ff6855201405",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCYB6FF7drgHsMI\nJBNYuYu2axA4e/6xnRbzA/5KtN5xOsXhWsL/giTHiWICKrN6XWLhgKC1tA2OVvc4\n1iuFGxLQJkGIekqkls6j/nusOkFL8WqwyEUmVpUwO3aA5K8E6xjI2ggdSM6vnSEU\nvrUBXlSP5wz3yXTjGJ8tSunLnJiQa3WNQ/iyCW3cDyT3THnwXof4Y33z9bhJzhjb\ng+xAePsegO91zRcowvLXtJt3DxpoHASjuSo36Twf6JzsaYqhAWkYr+n36gdw6Qia\nDoRwwESwtxBxih0Z6Pd8Vpsp2xBnNSHhRPGRKNosB6/tLOaqVwkPvhlyM1Va5kF4\np4QWBNy3AgMBAAECggEAD4+YXkP+Rzpe1BJ9OHOlbUKAIofuhdeCZdVezd69dfGC\nF5Lmqqhzg0j4kygzvq6YVGSKDo8jZBJas6KYScN/pXaE9qctxLL666Y8mmBMFq3b\nMcUN7uKl2o37jy3ZDDPUEZrfgb/WB/uZSzpJ5J33IdOQbDxejnASutwUGhcpNn7g\n3sb6wxk/uRM08fkvOKfpG3kj71Os66jZFC9MNrY+lOjms9WC2sBUNtC5jgEIy+BB\n/Qqy/njD0Ch5tezSNn5Ziw/TNyifDVT8OumE9D850R5ehoj7ev0V6vFQz6KPTQhq\nO9CtRzfqbDUrBCS8JNVh17JSg49YaYAA9zLoGnX/wQKBgQDKugQGrKW+J3wNcWm5\nkHo0Q6ZA8SWer20k+un4CHLAbs8UT1t2Qkvc+KEsrrHbl1sAsqW6hKAmX91s9FzO\naDN8qbHEaxpOv1YKuv3UAd53/NGBhCazHJDrFq+o7uj0CaKnCm9X0oTIesFQd6p4\nc52AOH7kSUxZ426WMPPtPI2TXwKBgQC/+xkc1l8m1s9QHMdhgalV3d6xKZoNHF8+\nynPGf618+GCovxbZhlMZQy5JIDGh2lS2fyuN4Yx4e1at+BsUVEKzvsdB1GmDCadj\nPLpK2eKjA+FMLuU+yi7zNUpLfw2hCXiOhdEhw1PdBbU6npUyKTulWInFWHWP0EvD\nbgW+VaVNqQKBgHcSLN0yuKLolB9dNsjsSCq8dUD9oqgCx6uJyLSLWcMXEoAOYF0k\ncWSXkCsrbIHa83OEen0D+wCvG+Ir4PrHDz6weR4x/iC0lzf0PrQwaNe24eMdmJFp\nPOEn0QL7WE5F/of4RA+kMaODHlpB/xmCZsbx5+3z82l0gPasSAlWoJ0nAoGBAKdH\nE0qdP6uH4Hvdl5zObc3z1OZpaWGjJxp/LQH4niIWCaL/XdmLwTxx3RK6ioSMyON7\nS2gE73DLh2tuk6nTAYu838HsY0NaVg+SCoDN+TwxVU4cToO3h9FCzcmamzWGGxWU\nY/UXTSt4ncDGDRn385DO5Lyfp0/4HwvaAgcmeTKBAoGBAKq626xQ2HDY2Sd/4ti5\nBkVgzd5Cq2aLkvbBg95RAz9651qEwxQ1g/TCZScRpmZkVunetfBD8SeMu1cXmzmW\nsN9oTO7aLH8DbCBDPl1D+pPgAkzSGKEE0d5HvdMTKY6LNmsX/W7KObjEwoY34NAt\n7aUicn1uu+cG0UBlJzYOWpOY\n-----END PRIVATE KEY-----\n",
+  "client_email": "traffic-jam@waze-data-query.iam.gserviceaccount.com",
+  "client_id": "109560025563946929372",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/traffic-jam%40waze-data-query.iam.gserviceaccount.com"
+}
