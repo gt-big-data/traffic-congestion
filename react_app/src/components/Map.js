@@ -35,7 +35,10 @@ const Map = (props) => {
             }
             i++;
           }
-
+          // Now, we can just loop through the results and then plot the points. 
+          // We can also add a slider for the time. 
+          // We can also add a calendar for the date. 
+          // We can also add a dropdown
           //Later on, convert this to React and then because the data is dense. Do the average delay of the delay within the coordinates within a radius. 
 
       */}
