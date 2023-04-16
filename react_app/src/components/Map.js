@@ -3,7 +3,7 @@ import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import { Icon } from "leaflet";
 import "../../node_modules/leaflet/dist/leaflet.css";
 import React, { useState, useEffect } from "react";
-import results from "../utils/results.json";
+import results from "../utils/roundedresults.json";
 import Calendar from "./Calendar";
 import HourSlider from "./HourSlider";
 
