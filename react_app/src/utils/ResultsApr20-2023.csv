@@ -1,4 +1,4 @@
-,day_of_week,month,hour,x coord,y coord,delays
+index,day_of_week,month,hour,x_coord,y_coord,delays
 0,5.0,4.0,0.0,-84.407022,33.802288,122.075
 1,5.0,4.0,1.0,-84.407022,33.802288,143.375
 2,5.0,4.0,2.0,-84.407022,33.802288,143.375
