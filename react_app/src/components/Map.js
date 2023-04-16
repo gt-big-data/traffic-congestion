@@ -29,7 +29,7 @@ const Map = (props) => {
                 results2.push(results[i]);
                 <Marker position={[xcood, ycoord]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25,41], iconAnchor: [12, 41]})}>
                   <Popup>
-                    Longitude: long <br /> Latitute: lat <br /> Average Delay (in s econds): results[i].delays.
+                    Longitude: long <br /> Latitute: lat <br /> Average Delay (in seconds): results[i].delays.
                   </Popup>
                 </Marker>
             }
