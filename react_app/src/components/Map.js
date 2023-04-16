@@ -55,7 +55,7 @@ const Map = (props) => {
           console.log("here");
           return (
             <Marker
-              position={[result.x_coord, result.y_coord]}
+              position={[result.y_coord, result.x_coord]}
               icon={
                 new Icon({
                   iconUrl: markerIconPng,
@@ -65,7 +65,7 @@ const Map = (props) => {
               }
             >
               <Popup>
-                Longitude: {result.x_coord} <br /> Latitute: {result.y_coord}{" "}
+                Longitude: {result.y_coord} <br /> Latitute: {result.x_coord}{" "}
                 <br /> Average Delay (in seconds): {result.delays}.
               </Popup>
             </Marker>
