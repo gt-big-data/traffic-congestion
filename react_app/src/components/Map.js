@@ -1,5 +1,9 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
+import green from "../utils/green.png";
+import yellow from "../utils/yellow.png";
+import orange from "../utils/orange.png";
+import red from "../utils/red.png";
 import { Icon } from "leaflet";
 import "../../node_modules/leaflet/dist/leaflet.css";
 import React, { useState, useEffect } from "react";
@@ -53,23 +57,79 @@ const Map = (props) => {
           months[result.month - 1] === props.month
         ) {
           console.log("here");
-          return (
-            <Marker
-              position={[result.y_coord, result.x_coord]}
-              icon={
-                new Icon({
-                  iconUrl: markerIconPng,
-                  iconSize: [25, 41],
-                  iconAnchor: [12, 41],
-                })
-              }
-            >
-              <Popup>
-                Longitude: {result.y_coord} <br /> Latitute: {result.x_coord}{" "}
-                <br /> Average Delay (in seconds): {result.delays}.
-              </Popup>
-            </Marker>
-          );
+          if (result.delays <= 60) {
+            return (
+              <Marker
+                position={[result.y_coord, result.x_coord]}
+                icon={
+                  new Icon({
+                    iconUrl: green,
+                    iconSize: [30, 40],
+                    iconAnchor: [12, 41],
+                  })
+                }
+              >
+                <Popup>
+                  Longitude: {result.y_coord} <br /> Latitute: {result.x_coord}{" "}
+                  <br /> Average Delay (in seconds): {result.delays}.
+                </Popup>
+              </Marker>
+            );
+          } else if (result.delays <= 90) {
+            return (
+              <Marker
+                position={[result.y_coord, result.x_coord]}
+                icon={
+                  new Icon({
+                    iconUrl: orange,
+                    iconSize: [30, 40],
+                    iconAnchor: [12, 41],
+                  })
+                }
+              >
+                <Popup>
+                  Longitude: {result.y_coord} <br /> Latitute: {result.x_coord}{" "}
+                  <br /> Average Delay (in seconds): {result.delays}.
+                </Popup>
+              </Marker>
+            );
+          } else if (result.delays <= 120) {
+            return (
+              <Marker
+                position={[result.y_coord, result.x_coord]}
+                icon={
+                  new Icon({
+                    iconUrl: yellow,
+                    iconSize: [30, 40],
+                    iconAnchor: [12, 41],
+                  })
+                }
+              >
+                <Popup>
+                  Longitude: {result.y_coord} <br /> Latitute: {result.x_coord}{" "}
+                  <br /> Average Delay (in seconds): {result.delays}.
+                </Popup>
+              </Marker>
+            );
+          } else {
+            return (
+              <Marker
+                position={[result.y_coord, result.x_coord]}
+                icon={
+                  new Icon({
+                    iconUrl: red,
+                    iconSize: [30, 40],
+                    iconAnchor: [12, 41],
+                  })
+                }
+              >
+                <Popup>
+                  Longitude: {result.y_coord} <br /> Latitute: {result.x_coord}{" "}
+                  <br /> Average Delay (in seconds): {result.delays}.
+                </Popup>
+              </Marker>
+            );
+          }
         }
       })}
       <Marker
@@ -77,7 +137,7 @@ const Map = (props) => {
         icon={
           new Icon({
             iconUrl: markerIconPng,
-            iconSize: [25, 41],
+            iconSize: [25, 33.3],
             iconAnchor: [12, 41],
           })
         }
