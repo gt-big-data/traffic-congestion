@@ -57,7 +57,7 @@ const Map = (props) => {
           months[result.month - 1] === props.month
         ) {
           console.log("here");
-          if (result.delays <= 60) {
+          if (result.delays <= 80) {
             return (
               <Marker
                 position={[result.y_coord, result.x_coord]}
@@ -75,7 +75,7 @@ const Map = (props) => {
                 </Popup>
               </Marker>
             );
-          } else if (result.delays <= 90) {
+          } else if (result.delays <= 110) {
             return (
               <Marker
                 position={[result.y_coord, result.x_coord]}
@@ -93,7 +93,7 @@ const Map = (props) => {
                 </Popup>
               </Marker>
             );
-          } else if (result.delays <= 120) {
+          } else if (result.delays <= 140) {
             return (
               <Marker
                 position={[result.y_coord, result.x_coord]}
